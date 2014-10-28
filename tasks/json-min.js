@@ -9,9 +9,21 @@
 'use strict';
 
 module.exports = function(grunt) {
+
     grunt.registerMultiTask('json-min', 'A Grunt Task for minifying JSON files.', function() {
-        var options = this.options({}),
+        var options = this.options({
+                space: null,
+                remove: []
+            }),
             successCount = 0;
+
+        function removeReplacer(key, value) {
+            if(options.remove.indexOf(key) !== -1) {
+                return undefined;
+            }
+
+            return value;
+        }
 
         this.files.forEach(function(f) {
             f.src.filter(function(filepath) {
@@ -32,7 +44,7 @@ module.exports = function(grunt) {
 
                 grunt.log.verbose.write('Minifying ' + filepath + ' to ' + f.dest + '...');
 
-                grunt.file.write(f.dest, JSON.stringify(json));
+                grunt.file.write(f.dest, JSON.stringify(json, removeReplacer, options.space));
 
                 grunt.log.verbose.ok();
                 successCount++;

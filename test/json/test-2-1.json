@@ -1,5 +1,6 @@
 [
     {
+        "_comment": "a comment",
         "id": 2,
         "name": "An ice sculpture",
         "price": 12.50,

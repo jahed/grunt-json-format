@@ -24,7 +24,8 @@ module.exports = function(grunt) {
         'json-min': {
             test: {
                 options: {
-
+                    space: 4,
+                    remove: ['_comment']
                 },
                 files: [
                     {
