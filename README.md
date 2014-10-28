@@ -53,6 +53,7 @@ grunt json-format
 
 ### indent
 Type: `String` or `Number`
+
 Default: `null`
 
 The indentation of the output.
@@ -62,6 +63,7 @@ the character to use (for example `\t` will use tab characters).
 
 ### remove
 Type: `Array`
+
 Default: `[]`
 
 The keys to remove from the output.
