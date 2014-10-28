@@ -1,8 +1,8 @@
 {
-  "name": "grunt-json-min",
-  "description": "A Grunt Task for minifying JSON files",
+  "name": "grunt-json-format",
+  "description": "A Grunt Task for formatting JSON files.",
   "version": "0.1.0",
-  "homepage": "https://github.com/jahed/grunt-json-min",
+  "homepage": "https://github.com/jahed/grunt-json-format",
   "author": {
     "name": "Jahed Ahmed",
     "email": "jahed.public@gmail.com",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jahed/grunt-json-min.git"
+    "url": "git://github.com/jahed/grunt-json-format.git"
   },
   "bugs": {
-    "url": "https://github.com/jahed/grunt-json-min/issues"
+    "url": "https://github.com/jahed/grunt-json-format/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/jahed/grunt-json-min/blob/master/LICENSE-MIT"
+      "url": "https://github.com/jahed/grunt-json-format/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
@@ -38,6 +38,9 @@
   "keywords": [
     "gruntplugin",
     "minify",
+    "format",
+    "remove",
+    "comments",
     "json",
     "min",
     "grunt"

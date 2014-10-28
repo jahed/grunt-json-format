@@ -21,7 +21,7 @@ module.exports = function(grunt) {
             }
         },
 
-        'json-min': {
+        'json-format': {
             test: {
                 options: {
                     space: 4,
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 
     grunt.task.loadNpmTasks('grunt-contrib-jshint');
 
-    grunt.task.registerTask('test', ['json-min']);
+    grunt.task.registerTask('test', ['json-format']);
     grunt.task.registerTask('default', ['jshint', 'test']);
 
 };

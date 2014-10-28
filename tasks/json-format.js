@@ -10,9 +10,9 @@
 
 module.exports = function(grunt) {
 
-    grunt.registerMultiTask('json-min', 'A Grunt Task for minifying JSON files.', function() {
+    grunt.registerMultiTask('json-format', 'A Grunt Task for formatting JSON files.', function() {
         var options = this.options({
-                space: null,
+                indent: null,
                 remove: []
             }),
             successCount = 0;
@@ -42,9 +42,9 @@ module.exports = function(grunt) {
                     return;
                 }
 
-                grunt.log.verbose.write('Minifying ' + filepath + ' to ' + f.dest + '...');
+                grunt.log.verbose.write('Formatting ' + filepath + ' to ' + f.dest + '...');
 
-                grunt.file.write(f.dest, JSON.stringify(json, removeReplacer, options.space));
+                grunt.file.write(f.dest, JSON.stringify(json, removeReplacer, options.indent));
 
                 grunt.log.verbose.ok();
                 successCount++;
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
         });
 
         grunt.log.oklns(
-            successCount + ' JSON ' + grunt.util.pluralize(successCount, 'file/files') + ' minified.'
+            successCount + ' JSON ' + grunt.util.pluralize(successCount, 'file/files') + ' formatted.'
         );
     });
 
