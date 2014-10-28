@@ -61,6 +61,9 @@ The indentation of the output.
 Number indicated the number of whitespaces to use whereas a String will indicate
 the character to use (for example `\t` will use tab characters).
 
+By providing `null` or `0`, no indentation will be used and the output will
+essentially be minified.
+
 ### remove
 Type: `Array`
 
