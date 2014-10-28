@@ -25,12 +25,15 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt && ./node_modules/.bin/mocha"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "^0.9.2",
-    "grunt-contrib-clean": "^0.5.0",
-    "grunt": "~0.4.5"
+    "jshint-stylish": "~0.2.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt": "~0.4.5",
+    "mocha": "~2.0.1",
+    "chai": "~1.9.2"
   },
   "peerDependencies": {
     "grunt": "~0.4.5"
@@ -45,6 +48,5 @@
     "min",
     "grunt"
   ],
-  "dependencies": {
-  }
+  "dependencies": {}
 }
