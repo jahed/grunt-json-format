@@ -2,6 +2,8 @@
 
 > A Grunt Task for formatting JSON files.
 
+[![Build Status](https://travis-ci.org/jahed/grunt-json-format.svg?branch=master)](https://travis-ci.org/jahed/grunt-json-format)
+
 ## Getting Started
 
 ```sh
