@@ -28,7 +28,7 @@
     "test": "grunt && ./node_modules/.bin/mocha"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-jshint": "~0.9.2",
     "jshint-stylish": "~0.2.0",
     "grunt-contrib-clean": "~0.6.0",
     "grunt": "~0.4.5",
