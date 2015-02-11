@@ -75,6 +75,10 @@ The keys to remove from the output.
 
 This is useful for removing comment keys like `_comment`.
 
+## Files
+
+Check the [Grunt Documentation](http://gruntjs.com/configuring-tasks#files-array-format) on how to declare files and how Grunt parses them.
+
 ## License
 
 Copyright (c) 2014 Jahed Ahmed
