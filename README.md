@@ -48,7 +48,7 @@ grunt.loadNpmTasks('grunt-json-format');
 
 ```sh
 # Run the task
-grunt json-format
+grunt json-format:test
 ```
 
 ## Options
