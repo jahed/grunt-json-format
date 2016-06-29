@@ -1,3 +1,12 @@
+# .gitginore
+.idea
+node_modules
+build
+
+*.log
+
+
+# npm specific
 test
 
 .travis.yml
