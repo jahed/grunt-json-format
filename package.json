@@ -1,7 +1,7 @@
 {
   "name": "grunt-json-format",
   "description": "A Grunt Task for formatting JSON files.",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "homepage": "https://github.com/jahed/grunt-json-format",
   "author": {
     "name": "Jahed Ahmed",
