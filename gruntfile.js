@@ -1,13 +1,3 @@
-//
-// grunt-json-min
-// https://github.com/jahed/grunt-json-min
-//
-// Copyright (c) 2014 Jahed Ahmed
-// Licensed under the MIT license.
-//
-
-'use strict';
-
 module.exports = function(grunt) {
 
     grunt.task.registerTask('default', ['clean', 'jshint', 'build']);
