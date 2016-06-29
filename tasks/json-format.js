@@ -5,6 +5,21 @@ module.exports = function(grunt) {
         function() {
             var options,
                 succeededFiles;
+
+            function removePropertyReplacer(key, value) {
+                if(options.remove.indexOf(key) !== -1) {
+                    return undefined;
+                }
+                return value;
+            }
+
+            function exists(path) {
+                var fileExists = grunt.file.exists(path);
+                if (!fileExists) {
+                    grunt.fail.warn('Source file "' + path + '" not found.');
+                }
+                return fileExists;
+            }
     
             options = this.options({
                 indent: null,
@@ -33,21 +48,6 @@ module.exports = function(grunt) {
             });
     
             grunt.log.oklns(succeededFiles.length + ' JSON ' + grunt.util.pluralize(succeededFiles.length, 'file/files') + ' formatted.');
-        
-            function removePropertyReplacer(key, value) {
-                if(options.remove.indexOf(key) !== -1) {
-                    return undefined;
-                }
-                return value;
-            }
-            
-            function exists(path) {
-                var fileExists = grunt.file.exists(path);
-                if (!fileExists) {
-                    grunt.fail.warn('Source file "' + path + '" not found.');
-                }
-                return fileExists;
-            }
         }
     );
 };
