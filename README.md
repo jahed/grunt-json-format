@@ -2,7 +2,8 @@
 
 > A Grunt Task for formatting JSON files.
 
-[![Build Status](https://travis-ci.org/jahed/grunt-json-format.svg?branch=master)](https://travis-ci.org/jahed/grunt-json-format)
+[![Build Status](https://img.shields.io/travis/jahed/grunt-json-format.svg)](https://travis-ci.org/jahed/grunt-json-format)
+[![NPM Release](https://img.shields.io/npm/dt/grunt-json-format.svg)](https://www.npmjs.com/package/grunt-json-format)
 
 ## Getting Started
 
