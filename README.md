@@ -82,6 +82,4 @@ Check the [Grunt Documentation](http://gruntjs.com/configuring-tasks#files-array
 
 ## License
 
-Copyright (c) 2014 Jahed Ahmed
-
-Licensed under the [MIT license](LICENSE-MIT).
+See the [LICENSE](LICENSE) file.
