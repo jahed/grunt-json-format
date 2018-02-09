@@ -4,6 +4,7 @@
 
 [![Build Status](https://img.shields.io/travis/jahed/grunt-json-format.svg)](https://travis-ci.org/jahed/grunt-json-format)
 [![NPM Release](https://img.shields.io/npm/dt/grunt-json-format.svg)](https://www.npmjs.com/package/grunt-json-format)
+[![Patreon](https://img.shields.io/badge/patreon-donate-f96854.svg)](https://www.patreon.com/jahed)
 
 ## Getting Started
 
